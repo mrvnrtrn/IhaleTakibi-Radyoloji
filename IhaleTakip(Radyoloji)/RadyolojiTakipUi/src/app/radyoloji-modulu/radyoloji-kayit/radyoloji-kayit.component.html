@@ -1,0 +1,285 @@
+<div style="padding-bottom: 2em;">
+    <h5>Radyoloji İşlemi Ayrıntıları</h5>
+</div>
+
+<div class="content">
+    <form [formGroup]="fg_radyolojikayit" (ngSubmit)="SaveRadyolojiIslem(    
+                                                                    ihale_cari_kodu.value,
+                                                                    ihale_cari_ad_unvan.value,
+                                                                    ihale_hastane_cari_kodu.value,
+                                                                    ihale_hastane_cari_ad_unvan.value,
+                                                                    hasta_kabul_no.value,
+                                                                    hasta_tc_no.value,
+                                                                    hasta_adi.value,
+                                                                    hasta_soyadi.value,
+                                                                    cekim_tarihi.value,
+                                                                    cekim_saati.value,
+                                                                    islem_kodu.value,
+                                                                    islem_adi.value,
+                                                                    islem_puani.value,
+                                                                    cihaz_adi.value,
+                                                                    rapor_yazim_tarihi.value,
+                                                                    rapor_yazan_cari_ad_unvan.value,
+                                                                    rapor_onay_tarihi.value,
+                                                                    rapor_onay_cari_ad_unvan.value
+                                                                    )" class="md-float-material" novalidate>
+        <div class=" row col-sm-12 col-md-12 col-lg-12">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="row">
+                    <label class="col-sm-12 col-lg-4 col-md-4 col-form-label">İhale Kodu</label>
+                    <div class="col-sm-12 col-lg-6 col-md-6">
+                        <div class="input-group input-group-primary input-group-sm">
+                            <input id="ihale_cari_kodu" name="ihale_cari_kodu" formControlName="ihale_cari_kodu"
+                                #ihale_cari_kodu type="text" class="input-sm form-control thresold-i" maxlength="30"
+                                autocomplete="off" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="col-sm-12 col-lg-4 col-md-4 col-form-label">İhale Adı</label>
+                    <div class="col-sm-12 col-lg-6 col-md-6">
+                        <div class="input-group input-group-primary input-group-sm">
+                            <input id="ihale_cari_ad_unvan" name="ihale_cari_ad_unvan"
+                                formControlName="ihale_cari_ad_unvan" #ihale_cari_ad_unvan type="text"
+                                class="input-sm form-control thresold-i" autocomplete="off" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="col-sm-12 col-lg-4 col-md-4 col-form-label">Hastane Kodu</label>
+                    <div class="col-sm-12 col-lg-6 col-md-6">
+                        <div class="input-group input-group-primary input-group-sm">
+                            <input id="ihale_hastane_cari_kodu" name="ihale_hastane_cari_kodu"
+                                formControlName="ihale_hastane_cari_kodu" #ihale_hastane_cari_kodu type="text"
+                                class="input-sm form-control thresold-i" autocomplete="off" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="col-sm-12 col-lg-4 col-md-4 col-form-label">Hastane Adı</label>
+                    <div class="col-sm-12 col-lg-6 col-md-6">
+                        <div class="input-group input-group-primary input-group-sm">
+                            <input id="ihale_hastane_cari_ad_unvan" name="ihale_hastane_cari_ad_unvan"
+                                formControlName="ihale_hastane_cari_ad_unvan" #ihale_hastane_cari_ad_unvan type="text"
+                                class="input-sm form-control thresold-i" autocomplete="off" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="col-sm-12 col-lg-4 col-md-4 col-form-label">Hasta Kabul No</label>
+                    <div class="col-sm-12 col-lg-6 col-md-6">
+                        <div class="input-group input-group-primary input-group-sm">
+                            <input id="hasta_kabul_no" name="hasta_kabul_no" formControlName="hasta_kabul_no"
+                                #hasta_kabul_no type="text" class="input-sm form-control thresold-i" autocomplete="off">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="col-sm-12 col-lg-4 col-md-4 col-form-label">Hasta TC No</label>
+                    <div class="col-sm-12 col-lg-6 col-md-6">
+                        <div class="input-group input-group-primary input-group-sm">
+                            <input id="hasta_tc_no" name="hasta_tc_no" formControlName="hasta_tc_no" #hasta_tc_no
+                                type="text" class="input-sm form-control thresold-i" autocomplete="off" maxlength="11">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="col-sm-12 col-lg-4 col-md-4 col-form-label">Hasta Adı</label>
+                    <div class="col-sm-12 col-lg-6 col-md-6">
+                        <div class="input-group input-group-primary input-group-sm">
+                            <input id="hasta_adi" name="hasta_adi" formControlName="hasta_adi" #hasta_adi type="text"
+                                class="input-sm form-control thresold-i" autocomplete="off">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="col-sm-12 col-lg-4 col-md-4 col-form-label">Hasta Soyadı</label>
+                    <div class="col-sm-12 col-lg-6 col-md-6">
+                        <div class="input-group input-group-primary input-group-sm">
+                            <input id="hasta_soyadi" name="hasta_soyadi" formControlName="hasta_soyadi" #hasta_soyadi
+                                type="text" class="input-sm form-control thresold-i" autocomplete="off">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="row">
+                    <label class="col-sm-12 col-lg-4 col-md-4 col-form-label">Çekim Tarihi</label>
+                    <div class="col-sm-12 col-lg-6 col-md-6">
+                        <div class="input-group input-group-primary input-group-sm">
+                            <input id="cekim_tarihi" name="cekim_tarihi" formControlName="cekim_tarihi" #cekim_tarihi
+                                type="date" class="input-sm form-control thresold-i" autocomplete="off">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="col-sm-12 col-lg-4 col-md-4 col-form-label">Çekim Saati</label>
+                    <div class="col-sm-12 col-lg-6 col-md-6">
+                        <div class="input-group input-group-primary input-group-sm">
+                            <input id="cekim_saati" name="cekim_saati" formControlName="cekim_saati" #cekim_saati
+                                type="time" format="hh:mm a" class="input-sm form-control thresold-i"
+                                autocomplete="off">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="col-sm-12 col-lg-4 col-md-4 col-form-label">İşlem Kodu</label>
+                    <div class="col-sm-12 col-lg-6 col-md-6">
+                        <div class="input-group input-group-primary input-group-sm">
+                            <input id="islem_kodu" name="islem_kodu" formControlName="islem_kodu" #islem_kodu
+                                type="text" class="input-sm form-control thresold-i" autocomplete="off">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="col-sm-12 col-lg-4 col-md-4 col-form-label">İşlem Adı</label>
+                    <div class="col-sm-12 col-lg-6 col-md-6">
+                        <div class="input-group input-group-primary input-group-sm">
+                            <input id="islem_adi" name="islem_adi" formControlName="islem_adi" #islem_adi type="text"
+                                class="input-sm form-control thresold-i" autocomplete="off">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!--İşlem koduna göre otomatik gelecek. tbl_mlz_stok.mlz_kodu-->
+                    <label class="col-sm-12 col-lg-4 col-md-4 col-form-label">İşlem Puanı</label>
+                    <div class="col-sm-12 col-lg-6 col-md-6">
+                        <div class="input-group input-group-primary input-group-sm">
+                            <input id="islem_puani" name="islem_puani" formControlName="islem_puani" #islem_puani
+                                type="text" class="input-sm form-control thresold-i" autocomplete="off">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="col-sm-12 col-lg-4 col-md-4 col-form-label">Cihaz Adı</label>
+                    <div class="col-sm-12 col-lg-6 col-md-6">
+                        <div class="input-group input-group-primary input-group-sm">
+                            <input id="cihaz_adi" name="cihaz_adi" formControlName="cihaz_adi" #cihaz_adi type="text"
+                                class="input-sm form-control thresold-i" autocomplete="off">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="col-sm-12 col-lg-4 col-md-4 col-form-label">Rapor Yazım Tarihi</label>
+                    <div class="col-sm-12 col-lg-6 col-md-6">
+                        <div class="input-group input-group-primary input-group-sm">
+                            <input id="rapor_yazim_tarihi" name="rapor_yazim_tarihi"
+                                formControlName="rapor_yazim_tarihi" #rapor_yazim_tarihi type="date"
+                                class="input-sm form-control thresold-i" autocomplete="off">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="col-sm-12 col-lg-4 col-md-4 col-form-label">Raporu Yazan Raportör</label>
+                    <div class="col-sm-12 col-lg-6 col-md-6">
+                        <div class="input-group input-group-primary input-group-sm">
+                            <input list="raportor" id="rapor_yazan_cari_ad_unvan" name="rapor_yazan_cari_ad_unvan"
+                                formControlName="rapor_yazan_cari_ad_unvan" #rapor_yazan_cari_ad_unvan type="text"
+                                class="input-sm form-control thresold-i" autocomplete="off">
+                            <datalist id="raportor">
+                                <option *ngFor="let personel of raportorListesi">{{personel.ad_soyad}}</option>
+                            </datalist>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="col-sm-12 col-lg-4 col-md-4 col-form-label">Rapor Onay Tarihi</label>
+                    <div class="col-sm-12 col-lg-6 col-md-6">
+                        <div class="input-group input-group-primary input-group-sm">
+                            <input id="rapor_onay_tarihi" name="rapor_onay_tarihi" formControlName="rapor_onay_tarihi"
+                                #rapor_onay_tarihi type="date" class="input-sm form-control thresold-i"
+                                autocomplete="off">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="col-sm-12 col-lg-4 col-md-4 col-form-label">Raporu Onaylayan Doktor</label>
+                    <div class="col-sm-12 col-lg-6 col-md-6">
+                        <div class="input-group input-group-primary input-group-sm">
+                            <input list="doktor" id="rapor_onay_cari_ad_unvan" name="rapor_onay_cari_ad_unvan"
+                                formControlName="rapor_onay_cari_ad_unvan" #rapor_onay_cari_ad_unvan type="text"
+                                class="input-sm form-control thresold-i" autocomplete="off">
+                            <datalist id="doktor">
+                                <option *ngFor="let personel of doktorListesi">{{personel.ad_soyad}}</option>
+                            </datalist>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <div class="row col-sm-12 col-md-12 col-lg-12">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+            </div>
+            <div class="col-sm-12 col-md-5 col-lg-5">
+                <div class="row" style="justify-content: flex-end;">
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <button mat-raised-button color="error" id="islem_temizle" name="islem_kaydet" type="button"
+                            class="button-sm form-control thresold-i" (click)="formuTemizle()">Temizle</button>
+                    </div>
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <button mat-raised-button color="warn" id="islem_kaydet" name="islem_kaydet" type="submit"
+                            class="button-sm form-control thresold-i">Kaydet</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<br />
+<hr />
+<br />
+<form [formGroup]="fg_datefilter" (ngSubmit)="TarihleAra(baslangic_tarihi.value,bitis_tarihi.value)"
+    class="md-float-material" novalidate>
+    <div class="row">
+        <div class="input-group input-group-primary input-group-sm col-sm-12 col-md-5 col-lg-5">
+            <input id="baslangic_tarihi" name="baslangic_tarihi" formControlName="baslangic_tarihi" #baslangic_tarihi
+                type="date" class="input-sm form-control thresold-i col-sm-5 col-md-5 col-lg-5" autocomplete="off">
+            <input id="bitis_tarihi" name="bitis_tarihi" formControlName="bitis_tarihi" #bitis_tarihi type="date"
+                class="input-sm form-control thresold-i col-sm-5 col-md-5 col-lg-5" autocomplete="off">
+            <button mat-raised-button color="warn" type="submit"
+                class="input-sm form-control thresold-i col-sm-2 col-md-2 col-lg-2">
+                <mat-icon title="Filtrele">filter_list</mat-icon>
+            </button>
+        </div>
+    </div>
+</form>
+<br />
+<div style="overflow-x: scroll;">
+    <table datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" class="row-border hover">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Referans No</th>
+                <th>İhale Cari Kodu</th>
+                <th>Hasta Adı</th>
+                <th>Çekim Tarihi</th>
+                <th>İşlem Adı</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of RadyolojiListe ">
+                <td>
+                    <mat-icon color="primary" (click)="KayitDuzenle(item.ref_no)" style="cursor: pointer">edit
+                    </mat-icon>
+                    <mat-icon color="warn" (click)="KayitSil(item.ref_no)" style="cursor: pointer">delete</mat-icon>
+                </td>
+                <td>{{item.ref_no}}</td>
+                <td>{{item.ihale_cari_kodu}}</td>
+                <td>{{item.hasta_adi}}</td>
+                <td>{{item.cekim_tarihi | date:'dd/MM/yyyy' }}</td>
+                <td>{{item.islem_adi}}</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th></th>
+                <th>Referans No</th>
+                <th>İhale Cari Kodu</th>
+                <th>Hasta Adı</th>
+                <th>Çekim Tarihi</th>
+                <th>İşlem Adı</th>
+            </tr>
+        </tfoot>
+    </table>
+</div>

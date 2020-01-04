@@ -1,0 +1,12 @@
+D:\Projects\RadyolojiTakip\RadyolojiDataService\bin\Release\netstandard2.0\RadyolojiDataService.deps.json
+D:\Projects\RadyolojiTakip\RadyolojiDataService\bin\Release\netstandard2.0\RadyolojiDataService.dll
+D:\Projects\RadyolojiTakip\RadyolojiDataService\bin\Release\netstandard2.0\RadyolojiDataService.pdb
+D:\Projects\RadyolojiTakip\RadyolojiDataService\bin\Release\netstandard2.0\System.ComponentModel.Annotations.dll
+D:\Projects\RadyolojiTakip\RadyolojiDataService\bin\Release\netstandard2.0\System.ComponentModel.Annotations.xml
+D:\Projects\RadyolojiTakip\RadyolojiDataService\obj\Release\netstandard2.0\RadyolojiDataService.csprojAssemblyReference.cache
+D:\Projects\RadyolojiTakip\RadyolojiDataService\obj\Release\netstandard2.0\RadyolojiDataService.csproj.CoreCompileInputs.cache
+D:\Projects\RadyolojiTakip\RadyolojiDataService\obj\Release\netstandard2.0\RadyolojiDataService.AssemblyInfoInputs.cache
+D:\Projects\RadyolojiTakip\RadyolojiDataService\obj\Release\netstandard2.0\RadyolojiDataService.AssemblyInfo.cs
+D:\Projects\RadyolojiTakip\RadyolojiDataService\obj\Release\netstandard2.0\RadyolojiDataService.csproj.CopyComplete
+D:\Projects\RadyolojiTakip\RadyolojiDataService\obj\Release\netstandard2.0\RadyolojiDataService.dll
+D:\Projects\RadyolojiTakip\RadyolojiDataService\obj\Release\netstandard2.0\RadyolojiDataService.pdb
