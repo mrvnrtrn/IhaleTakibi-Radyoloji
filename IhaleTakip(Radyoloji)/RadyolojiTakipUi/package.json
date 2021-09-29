@@ -42,7 +42,7 @@
     "@types/node": "~8.9.4",
     "angular-datatables": "^8.0.0",
     "codelyzer": "^5.0.0",
-    "datatables.net": "^1.10.20",
+    "datatables.net": "^1.11.3",
     "datatables.net-dt": "^1.10.20",
     "jasmine-core": "~3.4.0",
     "jasmine-spec-reporter": "~4.2.1",
